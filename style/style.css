@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.5rem;
+    
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: 20px;
+}
+
+.logo h3{
+    color: white;
+    font-family: Nunito, serif;
+    margin-left:5px ;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav{
+    background-color: #242323;
+    border-radius: 70px;
+    /* padding: 17px; */
+    /* width: 1300px; */
+    height: 90px;
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 1300px;
+    padding: 10px 20px;
+
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    margin-right: 25px;
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-family: Nunito, serif;
+    font-weight: 200;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    border-bottom: 2px solid #80BC39;
+    border-bottom-width: 4px;
+    
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* button{
+    background-color: #AFE274;
+    color: #242323;
+    font-weight: 600;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 5px;
+} */
+
+button {
+    background-color: #AFE274;
+    color: #242323;
+    font-weight: 600;
+    border: none;
+    padding: 15px 25px; /* Adjusted for better spacing */
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 5px;
+
+    /* Flexbox for alignment */
+    display: flex;
+    align-items: center; /* Aligns text and image vertically */
+    justify-content: center; /* Centers content horizontally */
+    gap: 10px; /* Adds space between text and image */
+}
+
+/* Optional: Adjust image size */
+button img {
+    width: 80px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .nav-links, .nav-button {
+        display: none; /* Hide nav links on smaller screens */
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/* SECTION ONE */
+.section-one {
+    background-image: url(../assets/Grid\ layers\ -\ v3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.dummy-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.section-one h1{
+    /* width: 834pxpx; */
+    height: 154px;
+    text-align: center;
+    /* line-height: 76.8px; */
+    /* font-size: 70px; */
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    color: #2F2F2F;
+        max-width: 80%;
+        font-size: 4vw;
+        margin: 0 auto; /* Added bottom margin to separate from paragraph */
+        line-height: 1.2;
+}
+
+.section-one-paragraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-one p{
+    color: #666565;
+    font-size: 24px;
+    font-family: Nunito, serif;
+    text-align: center;
+    /* line-height: 10px; */
+    /* margin-top: 30px; */
+    margin-top: 0; /* Remove unnecessary margin to keep spacing consistent */
+}
+
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    /* margin-top: 60px; */
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.light-btn{
+    background-color: #F4F8EF;
+    color: #242323;
+    font-weight: 600;
+    border: none;
+    /* padding: 15px 25px;  */
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 5px;
+
+    /* Flexbox for alignment */
+    display: flex;
+    align-items: center; /* Aligns text and image vertically */
+    justify-content: center; 
+    gap: 10px; 
+
+
+
+    padding: 12px 20px;
+    font-size: 1rem;
+
+}
+
+.light-btn img{
+    width: 80px; /* Set a fixed width */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+@media (max-width: 600px) {
+    .btn-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
