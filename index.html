@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link
   rel="stylesheet"
@@ -19,12 +20,13 @@
 </head>
 <body>
     <header class="container">
-        <nav class="flex">
+        <nav class="flex" id="navbar">
             <div class="flex logo">
                 <img src="./assets/logo.png" alt="logo">
                 <h3>Pay4me App</h3>
             </div>
 
+            <div class="menu-toggle">&#9776;</div>
 
             <ul class="flex  nav-links">
                 <li><a href="#">Home</a></li>
@@ -32,7 +34,6 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Support</a></li>
             </ul>
-
             <button class="nav-button">Download App <img src="./assets/Frame 1707479102.png" alt=""></button>
         </nav>
     </header>
@@ -49,8 +50,8 @@
             </div>
             
             <div class="btn-container">
-            <button>Download App <img src="./assets/Frame 1707479102.png" alt=""></button>
-            <div><button class="light-btn">Watch Demo<img src="./assets/play-circle.png" alt=""></button></div>
+            <button class="download-button">Download App <img src="./assets/Frame 1707479102.png" alt="" ></button>
+            <button class="light-btn">Watch Demo<i class="fa fa-play-circle" aria-hidden="true"></i></i></button>
             </div>   
             
             <div class="student-count">
@@ -84,7 +85,11 @@
     </section>
     <section class="section-six">
         <div class="testimonials">
-            <img src="./assets/Frame 1707479079.png" alt="" class="testimonials-text">
+            <div>
+                <img src="./assets/testi-btn.png" alt="" class="testi-dummy-btn">
+            <h1>Don’t take our words for it,</h1> <h1>Take theirs.</h1>
+            </div>
+            
             <img src="./assets/Group 1371.png" alt="" class="wave">
         </div>
         <div class="card-container swiper">
@@ -102,7 +107,50 @@
         </div>
     </section>
     <section class="section-seven">
-        
+        <img src="./assets/faq-btn.png" alt="" class="faq-dummy-btn">
+        <h1>Got Questions?</h1>
+        <p>We've got Answers</p>
+        <div class="faq-container">
+            <div><img src="./assets/portrait-young-latin-man.png" alt="" class="faq-image"></div>
+            <div class="faq-wrapper">
+                <div class="faq">
+                    <button class="accordion">
+                        What is the Pay4me App?
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <div class="panel">
+                        <p>The Pay4me App is an innovative and user-friendly payment solution designed to streamline international education, business, and government transactions.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <button class="accordion">
+                        What is the payment processing timeline on the Pay4me App?
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <div class="panel">
+                        <p>The Pay4me App processes payments within 24 hours, ensuring a smooth and efficient payment process for all users.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <button class="accordion">
+                        How does the Pay4me App Work?
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <div class="panel">
+                        <p>The Pay4me App uses secure and trusted payment gateways to process payments, ensuring the safety and security of all users.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <button class="accordion">
+                        How do I get started using the Pay4me App?
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                    <div class="panel">
+                        <p>To get started using the Pay4me App, simply sign up for an account, select your payment method, and start making payments with ease.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="section-eight container">
         <img src="./assets/blog-btn.png" alt="">

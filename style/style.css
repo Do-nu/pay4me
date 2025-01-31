@@ -19,13 +19,16 @@
 }
 
 .logo{
-    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo h3{
     color: white;
     font-family: Nunito, serif;
     margin-left:5px ;
+    white-space: nowrap;
 }
 
 .logo img {
@@ -36,18 +39,20 @@
 nav{
     background-color: #242323;
     border-radius: 70px;
-    /* padding: 17px; */
-    /* width: 1300px; */
     height: 90px;
-    width: 100%; /* Adjusted for responsiveness */
-    max-width: 1300px;
+    width: 100%;
+    max-width: 1500px;
     padding: 10px 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
 
 }
 
 ul{
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 li{
@@ -57,6 +62,8 @@ li{
     color: white;
     font-family: Nunito, serif;
     font-weight: 200;
+    width: 100%;
+    height: 100%;
 }
 
 li a{
@@ -70,60 +77,58 @@ li a:hover{
     
 }
 
+.nav-button {
+    background-color: #AFE274;
+    color: #242323;
+    font-weight: 600;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-button img {
+    width: 80px; 
+    height: auto; 
+}
 
 .menu-toggle {
     display: none;
     font-size: 30px;
     color: white;
     cursor: pointer;
-}
+} 
 
-/* button{
-    background-color: #AFE274;
-    color: #242323;
-    font-weight: 600;
-    border: none;
-    padding: 20px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    text-align: center;
-    margin-right: 5px;
-} */
-
-button {
-    background-color: #AFE274;
-    color: #242323;
-    font-weight: 600;
-    border: none;
-    padding: 15px 25px; /* Adjusted for better spacing */
-    border-radius: 50px;
-    cursor: pointer;
-    text-align: center;
-    margin-right: 5px;
-
-    /* Flexbox for alignment */
-    display: flex;
-    align-items: center; /* Aligns text and image vertically */
-    justify-content: center; /* Centers content horizontally */
-    gap: 10px; /* Adds space between text and image */
-}
-
-/* Optional: Adjust image size */
-button img {
-    width: 80px; /* Set a fixed width */
-    height: auto; /* Maintain aspect ratio */
-}
-
-@media (max-width: 768px) {
-    .nav-links, .nav-button {
-        display: none; /* Hide nav links on smaller screens */
-    }
-
+@media (max-width: 862px) {
     .menu-toggle {
         display: block;
-        font-size: 30px;
-        color: white;
-        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: #242323;
+        border-radius: 10px;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-button {
+        display: none;
     }
 }
 
@@ -187,29 +192,49 @@ button img {
     margin-top: 40px;
 }
 
+.download-button{
+    background-color: #AFE274;
+    color: #242323;
+    font-weight: 600;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.download-button img {
+    width: 80px; 
+    height: auto; 
+}
+
 .light-btn{
     background-color: #F4F8EF;
     color: #242323;
     font-weight: 600;
     border: none;
-    padding: 20px 35px; 
+    padding: 15px 25px; 
     border-radius: 50px;
     cursor: pointer;
     text-align: center;
     margin-right: 5px;
-
-    /* Flexbox for alignment */
     display: flex;
-    align-items: center; /* Aligns text and image vertically */
+    align-items: center;
     justify-content: center; 
     gap: 10px;
     font-size: 1rem;
+    display: flex;
 
 }
 
-.light-btn img{
-    width: 80px; /* Set a fixed width */
-    height: 50px; /* Maintain aspect ratio */
+.light-btn i{
+    /* width: 50%;
+    height: 50px;  */
+    font-size: 2.6rem;
+    color: #242323;
 }
 
 .student-count{
@@ -275,6 +300,23 @@ button img {
     padding: 50px 20px;
 }
 
+.testi-dummy-btn{
+    width: 30%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.section-six h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: Nunito, serif;
+    color: #2F2F2F;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
 .testimonials{
     display: flex;
     justify-content: space-between;
@@ -324,6 +366,97 @@ button img {
   object-fit: cover; 
   border-radius: 30px;
 } */
+
+.faq-dummy-btn{
+    width: 10%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 50px;
+    /* object-fit: cover; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.section-seven h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: Nunito, serif;
+    color: #2F2F2F;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.section-seven p{
+    font-size: 1.6rem;
+    font-family: Nunito, serif;
+    color: #666565;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.faq-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.faq-image{
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.faq-wrapper{
+    max-width: 50%;
+    margin: auto;
+}
+
+.faq{
+    border: 1px solid rgba(0, 0 , 0, 0.2);
+    margin: 10px 0;
+}
+
+.fag.active{
+    border: none;
+}
+
+.accordion{
+    background-color: white;
+    color: rgba(0, 0 , 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.accordion i {
+    font-size: 1.6rem;
+}
+
+.active, .accordion:hover{
+    background-color: #f1f7f5;
+}
+
+.panel{
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+}
+
+.panel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
 
 .section-eight{
     display: flex;
